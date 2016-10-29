@@ -1,0 +1,18 @@
+create table questiondata
+(
+  questioId int primary key,
+  question varchar2(100)
+)
+
+create table answerchoices
+(
+  questionId int,
+  choice int,
+  statement varchar2(100)
+)
+
+create table answer
+(
+questionid int,
+choice int
+)
